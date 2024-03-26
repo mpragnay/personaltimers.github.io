@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personalised Timers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="d-flex flex-column justify-content-center bg-container p-1 heading-class">
+        <div class="text-center mb-3">
+            <h1 class="heading-class">My Personalised Timers</h1>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="text-center mb-3">
+            <button id="Study" onclick="studyButton()" class="button">Study</button>
+            <button id="Food" onclick="foodButton()" class="button">Food</button>
+            <button id="Fitness" onclick="fitButton()" class="button">Fitness</button>
+        </div>
+        <br>
+        <div class="text-center mb-3">
+            <button id="Pomodoro" onclick="pomodoro()" class="timer-btns d-none">Pomodoro</button>
+            <button id="Soya" onclick="soya()" class="timer-btns d-none">Soya</button>
+            <button id="Tofu" onclick="tofu()" class="timer-btns d-none">Tofu</button>
+            <button id="Cardio" onclick="cardio()" class="timer-btns d-none">Cardio</button>
+            <button id="Gym" onclick="gym()" class="timer-btns d-none">Gym Circuit</button>
+            <br>
+            <br>
+            <input id="workouts" placeholder="Number of Cardio Workouts" class="mr-3 d-none"/>
+            <input id="gap" placeholder="Gap for cardio" class="mb-3 d-none"/>
+            <br>
+            <button id="Rest" onclick="rest()" class="timer-btns d-none">Rest</button>
+        </div>
+        <div class="d-flex flex-row justify-content-center mb-3">
+            <div>
+                <p id="description" class="mt-2 d-none">Description</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="timer-container timer-text text-center">
+                <p id="timerValue" class="mt-2 d-none">30 seconds remaining</p>
+                <!-- <button id="Reset" onclick="reset()" class="d-none">Reset</button> -->
+            </div>
+        </div>
+        <div id="Return" class="ml-5 d-none">
+            <!-- <button onclick="backClick()" class="mr-2">Back</button> -->
+            <button onclick="homeClick()">Go To Home</button>
+        </div>
+    </div>
+    <script src="scriptcode.js"></script>
+</body>
+</html>
